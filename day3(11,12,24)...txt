@@ -1,0 +1,191 @@
+morning session
+----------------
+
+1.import math
+x=1.5357
+print(math.sqrt(x))
+print(math.factorial(6))
+print(math.exp(x))
+print(math.trunc(x))
+print(math.floor(x))
+print(math.ceil(x))
+print(round(2.5678,2))
+print(abs(-25))
+print(pow(2,4))
+print(min(10,20,30))
+print(max(10,20,30))
+print(divmod(17,3))
+
+=============================================
+
+2.water tank problem
+import math
+C=int(input("enter radius"))
+volume=((4/3)*3.14*(21**3))
+print("volume",volume)
+print(math.trunc(volume))
+print(math.floor(volume))
+print(math.ceil(volume))
+
+==============================================
+
+3.STRING OPERATION 
+1. 
+s3="bamboozled"
+#extract ba
+print(s3[0],s3[1])
+print(s3[-10],s3[-9])
+#extract bamboo
+print(s3[0:6])
+print(s3[:6])
+#extract ed
+print(s3[-2],s3[-1])
+------------------------------------------
+2.
+msg1="hoopla"
+print(msg1*3)  #string replication
+msg7="hello"
+msg8="world"
+msg9=msg7+msg8 #string concatination
+print(msg9)
+-----------------------------------------
+3.str="hello"
+for ch in str:
+    print(ch)
+---------------------------------------  
+4.
+s4="nitiayog"
+print(s4.isalpha())-------->true
+print(s4.isdigit())-------->false
+print(s4.islower())--------->true
+print(s4.isupper())--------->false
+---------------------------------------
+5.
+s4="nitiayog"
+print(s4.isalpha())-------->true
+print(s4.isdigit())-------->false
+print(s4.islower())--------->true
+print(s4.isupper())--------->false
+----------------------------------------
+6.s1="sravan no one"
+print(s1.find("sravan"))
+print(s1.replace("no","is no"))
+print(s1.find("n"))
+---------------------------------------
+7.oddnum=[1,3,5,7,9]
+evenum=[2,4,6,8]
+cmd=oddnum+evenum
+print(cmd)
+pm=[11,13,15]+oddnum
+print(pm)
+num=len(cmd)
+print(num)
+evenum[num-3:num]=[11 ,12,13]
+------------------------------------------
+8. mattrix
+mat=[[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+ti=zip(*mat)
+lst=list(ti)
+print(lst)
+------------------------------------------
+9.set operation
+a={10,20,30,40,50,60,70}
+b={33,44,51,10,20,30,33}
+print(a,b)
+print(a&b)
+print(a-b)
+print(b-a)
+print(max(a))
+print(min(a))
+print(len(a))
+print(sorted(b))
+-------------------------------------------
+10. TUPLE b
+t=(12,15,13,22,16,17)
+t+=(3.3,4.5,6.6)
+print(t)
+print(max(t))
+print(min(t))
+print(sorted(t))
+print(sum(t))
+print(len(t))
+----------------------------------------------
+11.LIST AND TUPLE
+int=[10,20,30,40,50]
+xf=(1.1,2.2,3.3,4.4,5.5)
+ti=zip(int,xf)
+lst=list(ti)
+for i,f in lst:
+      print(i,f)
+----------------------------------------------
+12. DIctionary
+std={'amir':23,'shaeed':35}
+print(std)
+lib={23:'finance',34:'goegraphy'}
+print(lib)
+emp={'keshav':23000,'madhav':35000,'vikas':45000}
+em=emp
+emp={}
+print(em)
+
+lst={'sunil','sachin','rahul','kapil'}
+d=dict.fromkeys(lst,50)
+print(d)
+
+--------------------------------------------------
+13.using ZIP
+vaccine={3456:'haritha',7643:'rajitha',6511:'sunitha'}
+print(len(vaccine))
+list1=['arun','dev','charan']
+list2=[56,67,44]
+d={k:v for(k,v)in zip(list1,list2)}
+print(d)
+------------------------------------------------ 
+14.additon DIC
+d1={'mango':45,'guna':33}
+d2={'ladyfinger':22,'tomato':12}
+d3={'pepsi':21,'coke':11}
+d4={}
+for d in(d1,d2,d3):
+     d4.update(d)
+print(d4)
+-----------------------------------------------
+15.updation DIC
+d1={'mango':45,'guna':33}
+d2={'ladyfinger':22,'tomato':12}
+d3={'pepsi':21,'coke':11}
+d4={}
+for d in(d1,d2,d3):
+     d4.update(d)
+print(d4)
+-----------------------------------------------
+16.
+d1={'asaf':45,'umar':31}
+if bool(d1):
+    print('dictionary not empty')
+d2={}
+if not bool(d2):
+    print("the dictionary is empty")
+----------------------------------------------
+17.
+a="guess"
+b="welcome"
+c="analysis"
+print(a[1:3])
+print(b.count('e'))
+print(c.index("y"))
+print(b*4)
+print(b+a)
+print(a.isalpha())
+print(a.isdigit())
+print(a.isalnum())
+print(a.isspace())
+print(swapcase(b))
+print(swapcase(b))
+---------------------------------------------------
+18.online bits
+my=[1,2,3,4,5,6]
+for i in range(1,6):
+    my [i-1]=my[i]
+for i in range(0,6):
+    print(my[i],end=" ")

@@ -1,0 +1,149 @@
+Morning session
+---------------
+1. strong or weak number 
+n=int(input("enter a num"))
+if n%2==0:
+    {
+    print("strong")
+    }
+else:
+    {
+    print("week")
+    }
+====================================================================
+
+2.negative and non-negative number 
+n=int(input("enter a num :"))
+if(n>0):
+    print("it is a non negative number ")
+elif(n<0):
+    print("it is negative ")
+else:
+    print("it is netural number")
+    
+======================================================================
+
+3. decorate a suare hall
+
+
+if(a>b):
+    print("decorate area is :",a**2-b**2)
+else:
+    print("no place for decorate")
+=======================================================================
+
+4.bala chocolates
+C=int(input("enter a number"))
+N=int(input("enter N num student "))
+print("the chocolate give back to bala",C%N)
+
+======================================================================
+
+5.perimeter
+L=int(input("enter a length"))
+B=int(input("enter breath "))
+print("the perimeter is:",2*(L+B))
+
+======================================================================
+
+6.cake 
+m=int(input())
+n=int(input())
+m=(m*n)-1
+print(m)
+=====================================================================
+
+7. magic show
+show=[0]*3
+rat=[0]*3
+for i in range(0,3):
+    show[i]=int(input())
+    rat[i]=float(input())
+    rat[i]=show[i]*rat[i]
+print(round(sum(rat))/sum(show),2)
+
+====================================================================
+Afternoon session
+=================
+1.google could and google drive are example of(public cloud)service on the internet public domain
+
+2.A cluster of system  that takes care of a single large transition as an autonamus unit is callesd as______
+
+3.scalability is the process of (a system's ability to increase or decrease in performance and cost in response to changes in application and system processing demands) on software and hard and hard ware 
+
+4. contum computing involves (computer science, physics, and mathematics) resources in hetrogeneus environment 
+
+5.flask and django are (open-source web frameworks)in python 
+
+6.anaconda is a (data science distribution) of python application
+
+7.the difference between is ml and dl is (the type of data used, the time it takes to train, and the complexity of the tasks performed)
+
+8.colab is (a browser-based environment that allows users to write and execute Python code )in python
+
+9.the benifits of python scripts of (Cross-platform shell scripting, quick automation, simple web development, data analysis and visualization, AI and ML are some of the examples)
+
+10.python automation can be used in ?
+ans: Python automation can be used for a wide range of tasks, including: 
+File and directory operations: Reading, writing, and manipulating files 
+Web scraping: Extracting data from web pages 
+Data analysis and reporting: Analyzing data and generating reports 
+Email automation: Sending, replying to, and sorting emails 
+
+=========================================
+8.swapping
+S=int(input("enter s "))
+U=int(input("enter b"))
+print(S)
+print(U)
+S,U=U,S
+print(S)
+print(U)
+===========================================
+
+9.bike sale and buy 
+A=int(input())
+B=int(input())
+C=int(input())
+D=(A+B)
+tot=C-D
+x=((tot/D)*100)
+print(round(x,2))
+
+===========================================
+
+10. find number among list
+n=int(input())
+x=[3,5,7,9]
+if(n in x):
+    print("found")
+else:
+    print("not found")
+    
+==========================================
+
+11.EOQ
+from math import*
+a=int(input())
+b=int(input())
+c=int(input())
+d=sqrt((2*a*b)/c)
+print(d)
+
+==========================================
+
+12. people attend to event 
+a=int(input())
+z=(a*2)/7
+b=z*2
+c=z/2
+print(z)
+print(b)
+print(c)
+print("total peopel came to event ",a+b+c)
+
+
+==========================================
+
+13.
+

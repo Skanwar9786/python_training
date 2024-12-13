@@ -1,0 +1,105 @@
+h 1. is python compiled or interpreted programming language ?
+A) yes interpreted language it help us to debug the lines of code.
+
+2. how do you identify token's in python ?
+A) token is the smallest unit in program
+
+3. what is the extension of the python file ?
+A) .py
+
+4. what are the tools used to implement python ?
+A)  Visual Studio Code 
+
+5. is python object oriented programming language ?
+A) yes it reduce the project life cycle
+
+----------------------------------------------------------
+
+SCRM --> SCRM is a systematic process that helps companies identify and mitigate potential risks in their supply chain.
+sprint --> Sprint is a small amount
+ CI--> configurable item
+ SCM--> A sprint is a short, time-bound period when a software development team works to complete a specific amount of work.
+-------------------------------------------------------------------------------------------------------------------------------
+
+logic: profit= sales-(total-cost)
+[total-cost= fixed cost+variablecost]
+Profit sales a = s1-(fc1+vc1)
+Profit sales b= s2-(fc2+vc2)
+Profit sales c = s3-(fc3+vc3)
+
+------------------------------------------------------------------
+1. sales problem
+fc=int(input("enter the fc value"))
+vc=int(input("enter the vc value"))
+sales=int(input("enter sales")
+psa=sales+(fc+vc)
+if(psa>0):
+  print("profit")
+else:
+  print("loss")
+print(psa)
+
+2. circle program
+print(2*pi*r*theta/360)
+print(2*3.145*14*36/360)
+    =8.7962
+
+3. odd numbers
+for i in range(5,0,-1):
+    print(i)
+
+4.even numbers
+for i in range(0,10,2):
+    print(i)
+
+5. traffic signal
+ts=str(input("enter the character"))
+if(ts=='go'):
+    print("go")
+elif(ts=='r'):
+    print("stop")
+else:
+    print("get ready")
+=================================================================
+6.  bsalary=20000
+DA=bsalary*(15/100)
+print("dearest allowance:",DA)
+HRA=bsalary*(20/100)
+print("HouseRentAllowance:",HRA)YB=24000
+MB=(YB/12)
+print("Monthly bonus",MB)
+#employye state insurance=grossSalary*Percentage
+ESI=GrossSalary*(20/100)
+print("employye state insurance:",ESI)
+# Income tax deduction=grossSalary*Percentage
+IT=GrossSalary*(25/100)
+print("Income tax deduction:",IT)
+# NetSalary
+Nsalary=GrossSalary-PF-ESI-IT
+print("Netsalary:",Nsalary)
+
+==============================================================
+7.year=int(input("enter a year"))
+if(year%4==0):
+    print("it is a leap year")
+else:
+    print("it is not a leap year")
+    
+X
+--------------------
+year=int(input("enter a year"))
+if(year%4==0 and year%100!=0)or(year%400==0):
+    print("leap year")
+else:
+    print("not leap year")
+
+===========================================================
+8.temp=int(input("enter a temp"))
+if (temp>28 and temp<42):
+    print("moderate")
+elif (temp>42 and temp<50):
+    print("extreme")
+elif (temp>0 and temp<30):
+    print("low")
+else:
+    print("enter below 50")

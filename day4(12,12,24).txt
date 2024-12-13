@@ -1,0 +1,114 @@
+1. generator
+ 
+def suare_gen(n):
+    for i in range(n):
+        yield i**2
+for square in suare_gen(5):
+    print(square)'''
+--------------------------------------------
+2.Iterator
+
+def my_iterator(data):
+    for item in data:
+        yield item
+my_list=[10,20,30,40,50]
+iterator=my_iterator(my_list)
+for item in iterator:
+    print(item)
+---------------------------------------------
+3.decorator
+
+def decor1(func):
+    def inner():
+        x=func()
+        return x*x
+    return inner
+def decor(func):
+    def inner():
+        x=func()
+        return 2*x
+    return inner
+@decor1
+@decor
+def num():
+    return 10
+@decor
+@decor1
+def num2():
+    return 10
+print(num())
+print(num2())
+------------------------------------------------
+4.Function with arguments
+def greet(name,greeting="hello"):
+    print(greeting,name)
+greet("alice")
+greet("bob","hI")
+-----------------------------------------
+5. function with variable length
+def sum_num(*args):
+    total=0
+    for num in args:
+        total+=num
+    return total
+result=sum_num(1,2,3,4,5)
+print(result)
+-----------------------------------------------
+6.Function with multiple valuse 
+def divide(a,b):
+	quotient=a//b
+remainder=a%b
+q,r=divide(10,3)
+print(q,r)
+ -----------------------------------------------
+7. car taxi application problem
+
+def calculate_taxi_fare(kilometers_travelled, hours_travelled, rate_per_hour, rate_per_km=10, base_fare=50):
+    fare_for_hours = hours_travelled * rate_per_hour
+    fare_for_km = kilometers_travelled * rate_per_km
+    total_fare = base_fare + fare_for_hours + fare_for_km
+    return total_fare
+kilometers = float(input("Enter kilometers traveled: "))
+hours = float(input("Enter hours traveled: "))
+hourly_rate = float(input("Enter rate per hour: "))
+
+fare = calculate_taxi_fare(kilometers, hours, hourly_rate)
+print(f"Total taxi fare: {fare:.2f} units")
+----------------------------------------------------------------------------
+8. fibonacci problem
+
+def fibonacci(n):
+    if n<=1:
+        return n
+    else:
+        return fibonacci(n-1)+fibonacci(n-2)
+for i in range(10):
+    print(fibonacci(i))
+--------------------------------------------------------------
+9."lambda using add,sub,mul"
+add=lambda x,y:x+y
+result=add(2,3)
+print(result)
+sub=lambda x,y:x-y
+result=sub(77,94)
+print(result)
+mul=lambda x,y:x*y
+result=mul(2,3)
+print(result)
+---------------------------------------------------------------
+10.lambda using fraud detection"
+transactions = [('user1', 100),('user2', 5000),('user3', 50),('user4', 10000),('user5', 200),('user6', 3000)]
+threshold = 100
+fraudulent_transactions = list(filter(lambda x: x[1] > threshold, transactions))
+print("Fraudulent transactions detected:")
+for transaction in fraudulent_transactions:
+    print(f"User: {transaction[0]}, Amount: ${transaction[1]}")
+------------------------------------------------------------------------
+11."lambda using traffic analaysis"
+traffic_data = [('car', 60),('bus', 40),('bike', 80),('car', 100),('bus', 50),('bike', 40),('truck', 90),('car',100)]
+speed_limit = 70
+classified_vehicles = list(map(lambda x: (x[0], "fast" if x[1] > speed_limit else "normal"),traffic_data))
+for vehicle in classified_vehicles:
+    print(f"Vehicle: {vehicle[0]}, Status: {vehicle[1]}")
+----------------------------------------------------------------------------------
+  
